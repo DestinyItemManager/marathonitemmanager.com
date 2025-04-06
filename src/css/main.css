@@ -19,7 +19,45 @@ html, body{
     font-style: normal;
     background-color: var(--black);
     color: var(--white);
+    position: relative;
 }
+#grid {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 100px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-gap: 0;
+    z-index: 2;
+}
+#grid > div{
+    transition: .5s;
+}
+#grid > div.green{
+    background: var(--green);
+}
+#grid > div.white{
+    background: var(--white);
+}
+#grid > div.blue{
+    background: var(--blue);
+}
+#grid > div.topRight{
+    border-top-right-radius: 50px;
+}
+#grid > div.topLeft{
+    border-top-left-radius: 50px;
+}
+#grid > div.bottomRight{
+    border-bottom-right-radius: 50px;
+}
+#grid > div.bottomLeft{
+    border-bottom-left-radius: 50px;
+}
+
 #mimMainContent{
     width: 100%;
     height: 100%;
@@ -30,7 +68,6 @@ html, body{
     font-size: 17vmin;
     padding: 10% 0% 10% 10%;
     position: relative;
-    z-index: 1;
     --s: 30px; /* control the size*/
     --c1: #252525;
     --c2: #1c1c1c;
@@ -54,7 +91,8 @@ html, body{
     padding: 20px 30px;
     color: #000;
     position: relative;
-    z-index: 2;
+    z-index: 3;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
 }
 #putBinary::before{
     content: '';
