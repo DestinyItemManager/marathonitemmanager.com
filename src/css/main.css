@@ -5,6 +5,7 @@
     --white: #d9d9d9;
     --blue: #95b8d1;
     --green: #c0fe04;
+    --red: #fc0a5f;
 }
 *{
     box-sizing: border-box;
@@ -44,6 +45,9 @@ html, body{
 }
 #grid > div.blue{
     background: var(--blue);
+}
+#grid > div.red{
+    background: var(--red);
 }
 #grid > div.topRight{
     border-top-right-radius: 50px;

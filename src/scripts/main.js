@@ -44,6 +44,32 @@ setInterval(function(){
         let shape = shapes[Math.floor(Math.random()*shapes.length)];
         cell.classList.remove(...cell.classList)
         cell.classList.add(color, shape)
+
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 21){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'topLeft')
+        }
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 22){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'topRight')
+        }
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 23){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'topRight')
+        }
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 26){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'bottomLeft')
+        }
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 27){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'bottomLeft')
+        }
+        if ((intervalCount >= 9 && intervalCount <= 12) && i == 28){
+            cell.classList.remove(...cell.classList);
+            cell.classList.add('red', 'bottomLeft')
+        }
     }
+    
 }, 1000)
 
